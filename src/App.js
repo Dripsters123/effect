@@ -1,15 +1,16 @@
 import ToDo from "./ToDo";
+
 function App() {
-  const todo = [{
+  const toDo = {
     userId: 1,
     id:1,
     title:"delectus aut autem",
     completed:false,
-  }];
+  };
 
   return (
     <>
-    <ToDo/>
+    <ToDo {...toDo}/>
     </>
    
   );
