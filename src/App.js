@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import ToDo from "./ToDo";
 import Comment from "./Comment";
 import Post from "./Post";
+import PostsList from "./PostList";
 
 function App() {
   const [toDo, setToDo] = useState({});
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <>
-      <Post />
+      <PostsList />
       <br />
       <Comment />
       <br />

@@ -1,14 +1,13 @@
-import PostsList from "./PostsList";
-function Post() {
-
+import IdName from "./IdName";
+function Post(props) {
+    const idName = props.userId - 1;
     return (
         <>
-
             <div>
-                <p>userId: {post.userId}</p>
-                <p>Id: {post.id}</p>
-                <p>title: {post.title}</p>
-                <p>body: {post.body}</p>
+                <p>Name: <IdName userNum={idName} /></p>
+                <p>Id: {props.id}</p>
+                <p>title: {props.title}</p>
+                <p>body: {props.body}</p>
             </div>
 
         </>
